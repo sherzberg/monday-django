@@ -4,7 +4,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.network :forwarded_port, guest: 8000, host: 8000
   
-  config.vm.synced_folder ".", "/vagrant", owner: "www-data", group: "www-data"
+  config.vm.synced_folder ".", "/home/vagrant/monday-django", owner: "vagrant", group: "vagrant"
 
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "puppet/manifests"
