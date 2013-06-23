@@ -19,10 +19,10 @@ sherzberg@tiblets~/monday-django
 $ vagrant ssh
 ```
 
-Note: we are going to be running all Django commands inside the vagrant instance
-
 Running Django
 ------------
+
+_Note: we are going to be running all Django commands inside the vagrant instance_
 
 Django has some utility commands to help bootstrap and run the project. The project has already been created in the "monday" folder. Lets run the app:
 
