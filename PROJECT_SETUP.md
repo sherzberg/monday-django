@@ -19,18 +19,16 @@ sherzberg@tiblets~/monday-django
 $ vagrant ssh
 ```
 
-Django Setup
+Note: we are going to be running all Django commands inside the vagrant instance
+
+Running Django
 ------------
 
-Django has some utility commands to help bootstrap the project. First install django:
+Django has some utility commands to help bootstrap and run the project. The project has already been created in the "monday" folder. Lets run the app:
 
 ```bash
 vagrant@precise64~
-$ sudo pip install django
-vagrant@precise64~
-$ cd monday-django
-vagrant@precise64~/monday-django
-$ django-admin.py startproject monday && cd monday
+$ cd monday-django/monday
 vagrant@precise64~/monday-django/monday
 $ python manage.py runserver 0.0.0.0:8000
 ```
@@ -42,13 +40,8 @@ Take a look at the settings.py file in monday/monday/. All of the main settings 
 App Setup
 ---------
 
-Django has a concept of reusable components called Apps. These apps can contain db models, views, templates, static files, and even settings. For the most part, apps are meant to be reusable for generic purposes. Lets make one:
+Django has a concept of reusable components called Apps. These apps can contain db models, views, templates, static files, and even settings. For the most part, apps are meant to be reusable for generic purposes.
 
-```bash
-vagrant@precise64~/monday-django/monday
-$ django-admin.py startapp deployments
-```
-
-This will create a folder called _deployments_ and will contain models.py, test.py, and views.py.
+One as already been created for you called "deployments". Checkout that folder to see what files are in there and what they do.
 
 If you want to see more project setup docs, look here https://docs.djangoproject.com/en/1.5/intro/tutorial01/
