@@ -8,6 +8,10 @@ Django's ORM has many useful features built in:
 - Auto primary key
 - Schema Generation
 - Lazy evaluation
+- REPL ORM shell
+
+Setup
+-----
 
 Lets create the database with our current project by using a built in Django command:
 
@@ -56,3 +60,15 @@ Filtering
 ---------
 
 ```bash
+```
+
+Inserting
+---------
+
+```bash
+>>> Code.objects.create(name='Test', repo='git@github.com/sherzberg/test.git')
+<Code: Code object>
+```
+
+Updating
+--------

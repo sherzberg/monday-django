@@ -5,7 +5,7 @@ Overview
 --------
 
 - [Project Setup](PROJECT_SETUP.md)
-- DB Models
+- [DB Models](DB_MODELS.md)
 - Admin App
 - Django Debug Toolbar
 - Exposing Json
