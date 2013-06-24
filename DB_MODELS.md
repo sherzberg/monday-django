@@ -9,6 +9,7 @@ Django's ORM has many useful features built in:
 - Schema Generation
 - Lazy evaluation
 - REPL ORM shell
+- Multiple concurrent database support
 
 Setup
 -----
