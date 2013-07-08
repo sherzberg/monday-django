@@ -16,8 +16,8 @@ urlpatterns = patterns('',
     # url(r'^$', 'monday.views.home', name='home'),
     # url(r'^monday/', include('monday.foo.urls')),
 
-    url(r'^api/', include(router.urls)),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    #url(r'^api/', include(router.urls)),
+    #url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 )
