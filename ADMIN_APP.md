@@ -8,3 +8,5 @@ Django's Admin App has many useful features built in:
 - Customize form fields
 - Search and filter
 - Group and User Based Permission
+
+For more documentation, see (https://docs.djangoproject.com/en/dev/ref/contrib/admin/)[https://docs.djangoproject.com/en/dev/ref/contrib/admin/]
