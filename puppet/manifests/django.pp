@@ -12,5 +12,6 @@ package {'python-deps':
 package {'django-deps':
   name => ['django', 'django-debug-toolbar'],
   ensure => present,
+  provider => pip,
   require => Package['python-deps'],
 }
