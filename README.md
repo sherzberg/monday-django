@@ -8,4 +8,4 @@ Overview
 - [DB Models](DB_MODELS.md)
 - Django Debug Toolbar
 - [Admin App](ADMIN_APP.md)
-- Exposing Json
+- [Exposing Json](REST.md)
