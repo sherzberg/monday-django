@@ -1,8 +1,7 @@
 DB Models
 =========
 
-Django's ORM has many useful features built in:
-
+Django's ORM has many useful features built in: 
 - One-to-one, one-to-many, many-to-many
 - Bi-directional relationships
 - Auto primary key
@@ -61,7 +60,10 @@ u'Flower'
 Filtering
 ---------
 
-```bash
+```python
+print Code.objects.filter(name__startswith='F')
+
+Code.objects.get(id=1)
 ```
 
 Inserting
@@ -74,3 +76,10 @@ Inserting
 
 Updating
 --------
+
+```bash
+>>> c = Code.objects.create(name='Test2', repo='git@github.com/sherzberg/test.git')
+>>> c.name='Test3'
+>>> c.save()
+```
+
