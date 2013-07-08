@@ -128,6 +128,7 @@ INSTALLED_APPS = (
         # Uncomment the next line to enable admin documentation:
         # 'django.contrib.admindocs',
         'debug_toolbar',
+        'rest_framework',
         'deployments',
         )
 
@@ -171,3 +172,8 @@ DEBUG_TOOLBAR_PANELS = (
         'debug_toolbar.panels.signals.SignalDebugPanel',
         'debug_toolbar.panels.logger.LoggingPanel',
         )
+
+REST_FRAMEWORK = {
+        'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',),
+        'PAGINATE_BY': 10
+        }

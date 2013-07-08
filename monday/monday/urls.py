@@ -1,4 +1,11 @@
 from django.conf.urls import patterns, include, url
+from deployments.api import CodeViewSet, DomainViewSet, ApplicationViewSet
+from rest_framework import routers
+
+router = routers.DefaultRouter()
+router.register(r'code', CodeViewSet)
+router.register(r'domains', DomainViewSet)
+router.register(r'applications', ApplicationViewSet)
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -9,9 +16,8 @@ urlpatterns = patterns('',
     # url(r'^$', 'monday.views.home', name='home'),
     # url(r'^monday/', include('monday.foo.urls')),
 
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
+    url(r'^api/', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 )

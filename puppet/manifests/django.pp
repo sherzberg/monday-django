@@ -10,7 +10,7 @@ package {'python-deps':
 }
 
 package {'django-deps':
-  name => ['django', 'django-debug-toolbar'],
+  name => ['django', 'django-debug-toolbar', 'djangorestframework'],
   ensure => present,
   provider => pip,
   require => Package['python-deps'],
